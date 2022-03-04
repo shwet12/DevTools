@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+#root{
+    display: flex;
+}
+.nav {
+    flex: 1;
+    height: 100vh;
+    background: #222222;
+}
+
+.nav__link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.app {
+    flex: 6;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.app__header{
+    color: tan;
+    padding: 16px;
+    font-size: 33px;
+
+}
+a {
+    color: #009579;
+}
+
+.home{
+    margin: 0 50px;
+}
+.json__viewer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+}
+.format__btn{
+    width: 75px;
+    height: 20px;
+}
+.large-area {
+    height: 80vh;
+    width: 32vw;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #aaaaaa;
+    background: #444444;
+    border: none;
+    /* border-radius: 10px; */
+    outline: none;
+    margin: 0 15px;
+    resize: none;
+    font-family: monospace;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  .notes{
+    display: flex;
+    margin: 100px;
+    height: 72vh;
+}
+
+  .notes__list{
+    flex: 1;
+    background: #222222;
+    color: #fff;
+    position: relative;
+    overflow-y: scroll;
+  }
+
+  .notes__list__box{
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+  }
+
+  .truncate{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .notes__list__title{
+      pointer-events: none;
+  }
+  .notes__list__delete{
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .notes__list__content{
+    font-size: 14px;
+    pointer-events: none;
+    font-style: italic;
+  }
+  .notes__add__notes{
+     width: 20%;
+     background-color: #222222;
+     color: #fff;
+
+  }
+  .notes__preview{
+      flex: 3;
+  }
+
+  .notes__preview > .notes__preview_header{
+      display: flex;
+  }
+  .notes__preview_header > .notes__preview__title{
+    background: #eeeeee;
+    padding: 0 22px;
+    /* border-bottom: 1px solid; */
+    /* height: 26px; */
+    font-size: 44px;
+    width: 80%;
+    border: none;
+    outline: none;
+  }
+  .notes__preview > .notes__preview__content{
+    height: 90%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #222222;
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+  }
